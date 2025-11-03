@@ -33,6 +33,12 @@ Key deliverables for the advisor:
 - `out/surrogate_demo/surrogate_surface.png` and `surrogate_learning_curve.png` – visualize surrogate predictions, sample efficiency, and BO vs. grid contrast.
 - `figs/overview.png`, `figs/quadrature.png` – instant visuals that explain the dynamics in under 10 seconds when the advisor opens the repo.
 
+### Quick visual snapshots
+
+![Electronic populations vs. time](figs/overview.png)
+
+![Oscillator quadrature dynamics](figs/quadrature.png)
+
 ## Repository tour
 ```
 mqb-toy-sim/
@@ -60,7 +66,7 @@ mqb-toy-sim/
   requirements.txt
 ```
 
-## Quantitative indicators (teacher’s “credibility” checklist)
+## Quantitative indicators
 - **Sample efficiency** – `analysis.sweeps.grid_scan` vs. `random_scan` feed into `scripts/surrogate.py` to show Bayesian Optimization or GP surrogate curves with ≥30 % step reduction.
 - **Prediction quality** – metrics include short-term MAE/MAPE, lead-time gain (how many minutes/hours earlier the surrogate anticipates thresholds), and purity loss.
 - **Model selection** – residual RMS, confidence interval width, and AIC/BIC exported alongside fits to justify surrogate choices.
